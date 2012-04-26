@@ -541,14 +541,14 @@
     [reflen=7] { shield-file: url(img/shield-trunk-7.png); }
     [reflen=8] { shield-file: url(img/shield-trunk-8.png); }
   }
-  [zoom=11] { shield-min-distance: 60; } //50
-  [zoom=12] { shield-min-distance: 80; } //60
-  [zoom=13] { shield-min-distance: 120; } //120
+  [zoom=11] { shield-min-distance: 150; } //50
+  [zoom=12] { shield-min-distance: 150; } //60
+  [zoom=13] { shield-min-distance: 120; }
   [zoom=14] { shield-min-distance: 180; }
 }
 
-#motorway_label[type='motorway'][zoom>9],
-#motorway_label[type='trunk'][zoom>9] {
+#motorway_label[type='motorway'][zoom>12],
+#motorway_label[type='trunk'][zoom>12] {
   text-name:"[name]";
   text-face-name:@sans_bold;
   text-placement:line;
@@ -559,12 +559,12 @@
   text-size:10;
   [zoom=11] { text-min-distance:70; }
   [zoom=12] { text-min-distance:80; }
-  [zoom=13] { text-min-distance:100; }
+  [zoom=13] { text-min-distance:180; }
 }
 
 #mainroad_label[type='primary'][zoom>12],
 #mainroad_label[type='secondary'][zoom>13],
-#mainroad_label[type='tertiary'][zoom>13] {
+#mainroad_label[type='tertiary'][zoom>14] {
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:line;
@@ -575,7 +575,7 @@
   text-size:11;
 }
 
-#minorroad_label[zoom>14] {
+#minorroad_label[zoom>15] {
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:line;

@@ -72,12 +72,12 @@
   }
 }
 /* At the highest zoom levels, render buildings in fancy pseudo-3D */
-#buildings[zoom>=17][type != 'hedge'] {
+#buildings[zoom>=16][type != 'hedge'] {
   building-fill:@building;
   building-height:1.25;
 }
 
-#buildings[zoom>=17][type = 'hedge'] {
+#buildings[zoom>=16][type = 'hedge'] {
   building-fill:@wooded;
   building-height:1.25;
 }
@@ -119,8 +119,8 @@ Map { background-color: @water; }
   [zoom>17]{ line-width: 7; }
 }
 
-#waterway[type='stream'][zoom>9] {
-  line-color: @water;
+#waterway[type='stream'][zoom>11] {
+  line-color: @stream;
   [zoom=10]{ line-width: 0.5; }
   [zoom=11]{ line-width: 0.5; }
   [zoom=12]{ line-width: 1; }
@@ -132,8 +132,8 @@ Map { background-color: @water; }
   }
 }
 
-#waterway[type='canal'][zoom>9] {
-  line-color: @water;
+#waterway[type='canal'][zoom>11] {
+  line-color: @canal;
   [zoom=10]{ line-width: 0.5; }
   [zoom=11]{ line-width: 0.5; }
   [zoom=12]{ line-width: 1; }
