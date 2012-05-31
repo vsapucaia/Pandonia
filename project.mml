@@ -1,14 +1,14 @@
 {
   "bounds": [
-    -180,
-    -85.0511,
-    180,
-    85.0511
+    -123.463,
+    36.8181,
+    -121.0405,
+    38.7134
   ],
   "center": [
-    0,
-    20,
-    4
+    -122.3808,
+    37.6621,
+    9
   ],
   "format": "png",
   "interactivity": false,
@@ -562,5 +562,5 @@
   ],
   "attribution": "Data © OpenStreetMap (and) contributors, CC-BY-SA",
   "description": "",
-  "name": "Flickr Subdued"
+  "name": "Pandonia"
 }

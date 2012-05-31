@@ -1,17 +1,19 @@
 /* ****************************************************************** */
-/* Flickr Subdued                                                     */
+/* Pandonia - Flickr's Map Style                                      */
 /* ****************************************************************** */
 
 /* For basic style customization you can simply edit the colors and
  * fonts defined in this file. For more detailed / advanced
  * adjustments explore the other files.
  *
+ * http://mapbox.com/carto/
+ *
  * GENERAL NOTES
  *
  * There is a slight performance cost in rendering line-caps.  An
  * effort has been made to restrict line-cap definitions to styles
  * where the results will be visible (lines at least 2 pixels thick).
- */
+*/
 
 /* ================================================================== */
 /* FONTS
@@ -42,7 +44,7 @@ Map { font-directory: url(./fonts); }
 /* LANDUSE & LANDCOVER COLORS
 /* ================================================================== */
 
-@land:              #fcfcfa;
+@land:              #faf8f4; // #f9f6f1;
 @water:             #bcdbf7;
 @beach:             @land;
 
@@ -78,28 +80,28 @@ Map { font-directory: url(./fonts); }
  *         inner fill (inline).
  */
 
-@motorway_line:     darken(@motorway_fill, 5%);
-@motorway_fill:     #ffd5e8; // #ffeff7
-@motorway_case:     darken(@motorway_fill, 10%);
-
-@trunk_line:        darken(@trunk_fill, 5%);
-@trunk_fill:        #ffe9f2; // #fff7fb
-@trunk_case:        darken(@trunk_fill, 5%);
-
-@primary_line:      darken(@primary_fill, 12%);
-@primary_fill:      #fff0c8; // #fffcf6
-@primary_case:      darken(@primary_fill, 12%);
-
-@secondary_line:    darken(@secondary_fill, 5%);
-@secondary_fill:    #fff6df; // #fefcf7
-@secondary_case:    darken(@secondary_fill, 12%);
-
-@standard_line:     @land * 0.9;
+@standard_line:     @land * 0.92;
 @standard_fill:     @bluish_white;
-@standard_case:     @land * 0.85;
+@standard_case:     @land * 0.88;
 
-@pedestrian_line:   @standard_line;
-@pedestrian_fill:   #FAFAF5;
+@motorway_line:     @land * 0.85;
+@motorway_fill:     #fdf7d2;
+@motorway_case:     @land * 0.85;
+
+@trunk_line:        @motorway_line;
+@trunk_fill:        @motorway_fill;
+@trunk_case:        @motorway_case;
+
+@primary_line:      @land * 0.92;
+@primary_fill:      @standard_fill;
+@primary_case:      @motorway_case;
+
+@secondary_line:    @primary_line;
+@secondary_fill:    @standard_fill;
+@secondary_case:    @motorway_case;
+
+@pedestrian_line:   @land;
+@pedestrian_fill:   @bluish_white;
 @pedestrian_case:   @land;
 
 @cycle_line:        @standard_line;

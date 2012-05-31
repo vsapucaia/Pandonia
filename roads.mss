@@ -77,6 +77,9 @@ come in as well.
   line-join: round;
   line-color: @standard_case;
   [bridge=1] { line-color: @standard_case; }
+  [zoom=11],
+  [zoom=12],
+  [zoom=13] { line-color: @standard_line; }
   [type='motorway'],
   [type='motorway_link'] {
     line-color: @motorway_case;
