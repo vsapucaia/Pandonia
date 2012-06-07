@@ -100,9 +100,12 @@ Map { font-directory: url(./fonts); }
 @secondary_fill:    @standard_fill;
 @secondary_case:    @motorway_case;
 
-@pedestrian_line:   @land;
-@pedestrian_fill:   @bluish_white;
-@pedestrian_case:   @land;
+/* We aren't using cases for pedestrian ways, and we don't need
+ * lines because they aren't visible at lower zoom levels. */
+
+@pedestrian_area:   @land * 0.97;
+@pedestrian_fill:   @land * 0.90;
+@pedestrian_bridge_fill: @land * 0.75;
 
 @cycle_line:        @standard_line;
 @cycle_fill:        #FAFAF5;
