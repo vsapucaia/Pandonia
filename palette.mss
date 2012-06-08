@@ -83,37 +83,43 @@ Map { font-directory: url(./fonts); }
 @standard_line:     @land * 0.92;
 @standard_fill:     @bluish_white;
 @standard_case:     @land * 0.88;
+@standard_tunnel_fill: #fcfcfb;
 
 @motorway_line:     @land * 0.85;
 @motorway_fill:     #fdf7d2;
 @motorway_case:     @land * 0.85;
+@motorway_tunnel_fill: #fcf8e9;
 
 @trunk_line:        @motorway_line;
 @trunk_fill:        @motorway_fill;
 @trunk_case:        @motorway_case;
+@trunk_tunnel_fill: @motorway_tunnel_fill;
 
 @primary_line:      @land * 0.92;
 @primary_fill:      @standard_fill;
 @primary_case:      @motorway_case;
+@primary_tunnel_fill: @standard_tunnel_fill;
 
 @secondary_line:    @primary_line;
 @secondary_fill:    @standard_fill;
 @secondary_case:    @motorway_case;
+@secondary_tunnel_fill:@standard_tunnel_fill;
 
 /* We aren't using cases for pedestrian ways, and we don't need
  * lines because they aren't visible at lower zoom levels. */
 
 @pedestrian_area:   @land * 0.97;
 @pedestrian_fill:   @land * 0.90;
-@pedestrian_bridge_fill: @land * 0.75;
+@pedestrian_bridge_fill: @land * 0.80;
+@pedestrian_bridge_case: @land;
 
 @cycle_line:        @standard_line;
 @cycle_fill:        #FAFAF5;
 @cycle_case:        @land;
 
-@rail_line:         @land * 0.88;
-@rail_fill:         @bluish_white;
-@rail_case:         @land;
+@rail_fill:         @land * 0.88;
+@rail_bridge_fill:  @land * 0.78;
+@rail_case:         @land; // Used only on rail bridges.
 
 @aeroway:           #ddd;
 
