@@ -1,6 +1,8 @@
 Pandonia
 ==========
 
+![screenshot](https://secure.flickr.com/images/github/pandonia-preview-main.png)
+
 Pandonia is a set of styles used by Flickr for our OSM map tiles. It's based on
 [OSM Bright][] and is written in [Carto][]. It's intended to be used with
 [TileMill][], which is awesome.
@@ -13,3 +15,4 @@ reports, feature requests, or photos of kittens filed in the [issue tracker][].
 [TileMill]: http://tilemill.com/
 [issue tracker]: http://github.com/flickr/Pandonia/issues/
 
+![screenshot](https://secure.flickr.com/images/github/pandonia-preview-2.png)
