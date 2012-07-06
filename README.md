@@ -15,4 +15,4 @@ reports, feature requests, or photos of kittens filed in the [issue tracker][].
 [TileMill]: http://tilemill.com/
 [issue tracker]: http://github.com/flickr/Pandonia/issues/
 
-![screenshot](https://secure.flickr.com/images/github/pandonia-preview-2.png.v1)
+![screenshot](https://secure.flickr.com/images/github/pandonia-preview-2.png.v2)
