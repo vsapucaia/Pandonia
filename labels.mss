@@ -57,6 +57,7 @@
   text-fill:@state_text;
   text-halo-fill: @state_halo;
   text-halo-radius: 1;
+  text-min-distance: 20;  
   [zoom=6] {
     text-size:10 + @text_adjust;
     text-wrap-width: 40;
@@ -94,6 +95,7 @@
   text-fill:@city_text;
   text-halo-fill:@city_halo;
   text-halo-radius:2;
+  text-min-distance: 20;
   [zoom<=8] {
     text-size: 10;
     text-halo-radius:1;
@@ -147,6 +149,7 @@
   text-halo-fill:@town_halo;
   text-halo-radius:1;
   text-wrap-width: 50;
+  text-min-distance: 40;
   [zoom>=10] {
     text-halo-radius:2;
     text-size: 10;
@@ -196,6 +199,7 @@
   text-halo-fill:@other_halo;
   text-halo-radius:1;
   text-wrap-width: 30;
+  text-min-distance: 15;  
   [zoom>=14] {
     text-size:11;
     text-character-spacing: 1;
