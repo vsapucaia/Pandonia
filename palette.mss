@@ -137,7 +137,7 @@ Map { font-directory: url(./fonts); }
    at once or override each individually. */
 @place_halo:        fadeout(@bluish_white,5%);
 
-@country_text:      #435;
+@country_text:      #222;
 @country_halo:      @place_halo;
 
 @state_text:        #5e5666;
@@ -149,7 +149,7 @@ Map { font-directory: url(./fonts); }
 @town_text:         #444;
 @town_halo:         @place_halo;
 
-@poi_text:          @poi_text;  
+@poi_text:          #888;  
 
 @road_text:         #999;
 @road_halo:         @bluish_white;
