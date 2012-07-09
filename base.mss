@@ -98,75 +98,62 @@ Map { background-color: @water; }
 /* WATER WAYS
 /* ================================================================== */
 
-#waterway[type='river'][zoom>5] {
+#waterway[zoom>=12][zoom<=14] {
   line-color: @water;
-  [zoom=6] { line-width: 0.15; }
-  [zoom=7] { line-width: 0.25; }
-  [zoom=8] { line-width: 0.5; }
-  [zoom=9] { line-width: 1; }
-  [zoom=10]{ line-width: 1; }
-  [zoom>10]{
+  [type='river'],
+  [type='canal'] {
     line-cap: round;
     line-join: round;
+    [zoom=12]{ line-width: 0.8; }
+    [zoom=13]{ line-width: 1; }
+    [zoom=14]{ line-width: 1.5; }
   }
-  [zoom=11]{ line-width: 2; }
-  [zoom=12]{ line-width: 2; }
-  [zoom=13]{ line-width: 3; }
-  [zoom=14]{ line-width: 3; }
-  [zoom=15]{ line-width: 4; }
-  [zoom=16]{ line-width: 5; }
-  [zoom=17]{ line-width: 6; }
-  [zoom>17]{ line-width: 7; }
-}
-
-#waterway[type='stream'][zoom>11] {
-  line-color: @stream;
-  [zoom=10]{ line-width: 0.5; }
-  [zoom=11]{ line-width: 0.5; }
-  [zoom=12]{ line-width: 1; }
-  [zoom=13]{ line-width: 1; }
-  [zoom>13]{
-    line-width: 2;
-    line-join: round;
-    line-cap: round;
+  [type='stream'] {
+    [zoom=12]{ line-width: 0; }
+    [zoom=13]{ line-width: 0.2; }
+    [zoom=14]{ line-width: 0.4; }
   }
 }
-
-#waterway[type='canal'][zoom>11] {
-  line-color: @canal;
-  [zoom=10]{ line-width: 0.5; }
-  [zoom=11]{ line-width: 0.5; }
-  [zoom=12]{ line-width: 1; }
-  [zoom=13]{ line-width: 1; }
-  [zoom>13]{
+  
+#waterway[zoom>=15] {
+  line-color: @water;
+  [type='river'],
+  [type='canal'] {
     line-cap: round;
     line-join: round;
-  } 
-  [zoom=14]{ line-width: 2; }
-  [zoom=15]{ line-width: 4; }
-  [zoom=16]{ line-width: 8; }
-  [zoom=17]{ line-width: 16; }
-  [zoom>17]{ line-width: 30; }
-}
-
-#waterway[type='ditch'][zoom>14] {
-  line-color: @water;
-  [zoom=15]{ line-width: .5; }
-  [zoom=16]{ line-width: 1; }
-  [zoom>16]{ line-width: 2; }
+    [zoom=15]{ line-width: 2; }
+    [zoom=16]{ line-width: 3; }
+    [zoom=17]{ line-width: 4; }
+    [zoom=18]{ line-width: 5; }
+    [zoom=19]{ line-width: 6; }
+    [zoom>19]{ line-width: 7; }
+  }
+  [type='stream'] {
+    [zoom=15]{ line-width: 0.6; }
+    [zoom=16]{ line-width: 0.8; }
+    [zoom=17]{ line-width: 1; }
+    [zoom=18]{ line-width: 1.5; }
+    [zoom>18]{ line-width: 2; }
+  }
+  [type='ditch'],
+  [type='drain'] {
+    [zoom=15]{ line-width: 0.1; }
+    [zoom=16]{ line-width: 0.3; }
+    [zoom=17]{ line-width: 0.5; }
+    [zoom=18]{ line-width: 0.7; }
+    [zoom=19]{ line-width: 1; }
+    [zoom>19]{ line-width: 1.5; }
+  }
 }
 
 /* ================================================================== */
 /* ADMINISTRATIVE BOUNDARIES
 /* ================================================================== */
 
-
-#admin[admin_level=2][zoom>1] {
+#admin[admin_level='2'][zoom>1] { // Change this to #admin[admin_level=2][zoom>1] if you're using imposm.
   line-color:@admin_2;
-  line-width:0.5;
-  [zoom=2] { line-opacity: 0.25; }
-  [zoom=3] { line-opacity: 0.3; }
-  [zoom=4] { line-opacity: 0.4; }
+  line-width:1;
+  line-opacity:0.25;
 }
 
 /* ================================================================== */

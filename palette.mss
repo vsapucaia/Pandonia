@@ -127,7 +127,7 @@ Map { font-directory: url(./fonts); }
 /* BOUNDARY COLORS
 /* ================================================================== */
 
-@admin_2:           #324;
+@admin_2:           #8fa7bc;
 
 /* ================================================================== */
 /* LABEL COLORS
@@ -140,7 +140,7 @@ Map { font-directory: url(./fonts); }
 @country_text:      #435;
 @country_halo:      @place_halo;
 
-@state_text:        #546;
+@state_text:        #5e5666;
 @state_halo:        @place_halo;
 
 @city_text:         #333;
